@@ -1,0 +1,45 @@
+# old method for workerman daemon mode.
+#  server:
+#   build: .
+#   volumes:
+#     - ./:/app
+#   ports:
+#     - "8080:80"
+#   # docker 
+#   command: "php /app/index.php kill && php /app/index.php start"
+
+nginx:
+  image: nginx:alpine
+  volumes:
+   - ./nginx/conf.d:/etc/nginx/conf.d
+   # 这个挂载是为了处理静态文件
+   # - ./static:/working
+  ports:
+   - 5000:80
+  links:
+    - fpm
+fpm:
+  image: nuts:php-7-fpm-alpine
+  # we need pdo_mysql ext, so need to rebuild
+  # build: .
+  # image: php:7-fpm-alpine
+  volumes:
+    - .:/var/www/html
+  # - ./php/php.ini:/usr/local/etc/php/php.ini
+  links:
+    - mysql
+    - redis
+mysql:
+  image: mysql:5.5
+  environment:
+    TZ: 'Asia/Shanghai'
+    MYSQL_ROOT_PASSWORD: 123456
+  volumes:
+    - ./data:/var/lib/mysql
+  ports:
+    - 5306:3306
+
+redis:
+  image: redis:3-alpine
+  ports:
+    - 5379:6379
