@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: admin
+ * Date: 2017-03-27
+ * Time: 18:11
+ */
 namespace App\Exceptions;
 class Error extends \ErrorException
 {
