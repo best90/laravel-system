@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Http\Model;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Http\Basic;
 
-class Judge extends Model
+class Judge extends Basic
 {
     //
 }
