@@ -15,8 +15,8 @@ class Sms
     protected $http;
     protected $config = [
         'host' => 'http://115.29.47.151:8860?',
-        'username' => '600071',
-        'password' => 'MJKIGWGHC7'
+        'username' => 'xxxxx',
+        'password' => 'xxxxxx'
     ];
 
     public function __construct()
