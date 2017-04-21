@@ -10,7 +10,7 @@ namespace App\Exceptions;
 
 class ErrorCode
 {
-    //通用
+    //项目通用
     const SUCCESS = 0;
     const DATA_EXISTS = 1;
     const DATA_NOT_EXISTS = 2;
@@ -34,7 +34,7 @@ class ErrorCode
     const REQUEST_NOT_FOUND = 98;
     const UNKNOWN = 99;
 
-    //公司内部通用
+    //通用
     const INTERNAL_ERROR = 1001;
     const OUT_OF_SERVICE = 1002;
     const UNDEFINED_SERVICE = 1003;

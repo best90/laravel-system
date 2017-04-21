@@ -9,7 +9,7 @@ namespace App\Exceptions;
 
 class Message
 {
-    //通用
+    //项目通用
     const SUCCESS = '成功';
     const DATA_EXISTS = '数据已存在';
     const DATA_NOT_EXISTS = '数据不存在';
@@ -33,7 +33,7 @@ class Message
     const REQUEST_NOT_FOUND = '请求找不到';
     const UNKNOWN = '未知错误(自定义)';
 
-    //公司内部通用
+    //通用
     const INTERNAL_ERROR = '内部错误';
     const OUT_OF_SERVICE = '停止服务';
     const UNDEFINED_SERVICE = '未知服务';
