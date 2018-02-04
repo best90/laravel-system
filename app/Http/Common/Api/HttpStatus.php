@@ -6,7 +6,7 @@
  * Time: 10:47
  */
 
-namespace App\Exceptions;
+namespace App\Http\Common\Api;
 
 
 class HttpStatus

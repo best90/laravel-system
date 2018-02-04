@@ -5,7 +5,7 @@
  * Date: 2017-03-27
  * Time: 18:11
  */
-namespace App\Exceptions;
+namespace App\Http\Common\Api;
 
 class Message
 {

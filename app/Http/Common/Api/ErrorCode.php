@@ -6,7 +6,7 @@
  * Time: 10:05
  */
 
-namespace App\Exceptions;
+namespace App\Http\Common\Api;
 
 class ErrorCode
 {

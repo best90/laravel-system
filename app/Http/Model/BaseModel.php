@@ -1,16 +1,17 @@
 <?php
 
-namespace App\Http;
+namespace App\Http\Model;
 
+use App\Http\Common\Database;
 use Illuminate\Database\Eloquent\Model;
 
-class Basic extends Model
+class BaseModel extends Model
 {
     public $timestamps = false;
     
     public function __construct(array $attributes = [])
     {
-        $this->table = Tables::TABLES[class_basename($this)] ?? null;
+        $this->table = Database::TABLES[class_basename($this)] ?? null;
         parent::__construct($attributes);
     }
 }
