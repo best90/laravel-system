@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: admin
- * Date: 2017-04-10
- * Time: 18:13
- */
 
-namespace App\Http;
+namespace App\Http\Common;
 
 class Request
 {

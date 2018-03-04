@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: admin
- * Date: 2017-03-29
- * Time: 11:01
- */
 
-namespace App\Http;
+namespace App\Http\Common;
 
 
 use App\Http\Common\Api\HttpStatus;

@@ -2,12 +2,20 @@
 
 namespace App\Http\Controllers\V1;
 
-use App\Http\Api;
+use App\Http\Common\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Model\User;
+use App\Sms\Sms;
 
 class UserController extends Controller
 {
+    protected $sms;
+
+    public function __construct(Sms $sms)
+    {
+        $this->sms = $sms;
+    }
+
     /**
      * 用户登录
      * @param string $mobile
@@ -50,11 +58,9 @@ class UserController extends Controller
 
     public function password()
     {
-
     }
 
     public function profile()
     {
-
     }
 }
